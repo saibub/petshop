@@ -1,0 +1,105 @@
+:root {
+  --red: #f92e54;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+body {
+  background-color: black;
+  margin: 0rem 2rem;
+}
+
+.container {
+  height: 93vh;
+}
+
+.heading {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+  color: #f92e54;
+  width: 100%;
+  font-size: 3rem;
+}
+
+.flexcontainer {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.button-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--red);
+  border: 2px solid var(--red);
+  border-radius: 11rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2rem 1rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  width: 15rem;
+}
+
+button:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.image-container {
+  width: 50vw;
+}
+
+.image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--red);
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+  }
+  .flexcontainer {
+    flex-direction: column;
+    margin: auto;
+  }
+  .button-container {
+    width: 100%;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+  .image-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
